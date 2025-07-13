@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+form input, form button {
+    margin: 5px;
+    padding: 8px;
+}
+
+.priority label {
+    margin-right: 10px;
+}
+
+.completed {
+    background-color: #d4edda;
+    text-decoration: line-through;
+}

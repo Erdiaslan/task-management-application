@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Görev Yönetim Uygulaması</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gerçek Zamanlı Görev Yönetim Uygulaması</h1>
+
+    <form id="taskForm">
+        <input type="text" id="title" placeholder="Görev Başlığı (zorunlu)" required>
+        <input type="text" id="description" placeholder="Açıklama (opsiyonel)">
+        
+        <div class="priority">
+            <label><input type="radio" name="priority" value="low"> Düşük</label>
+            <label><input type="radio" name="priority" value="medium"> Orta</label>
+            <label><input type="radio" name="priority" value="high"> Yüksek</label>
+        </div>
+
+        <button type="submit">Ekle</button>
+    </form>
+
+    <div>
+        <label><input type="checkbox" id="filterCompleted"> Sadece tamamlananları göster</label>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
